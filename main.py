@@ -107,7 +107,6 @@ def get_school(
             "url": a_link,
             "results": get_table(url=a_link, headless=headless),
         })
-        time.sleep(SECONDS_TO_SLEEP)
     return response
 
 
@@ -146,6 +145,7 @@ def get_city(
             "url": a_link,
             "tables": get_school(name, url=a_link, headless=headless),
         })
+        time.sleep(SECONDS_TO_SLEEP)
     return response
 
 
